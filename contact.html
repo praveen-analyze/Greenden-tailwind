@@ -9,9 +9,9 @@
 </head>
 <body>
         <!-- Navbar -->
-    <div class="p-3 bg-green-100 flex justify-between text-center items-center shadow-xl sticky top-0 z-10">
+    <div class="p-3 bg-green-400 flex justify-between text-center items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-2 w-5 h-5 align-center cursor-pointer md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -29,6 +29,43 @@
             </li>
         </ul>
     </div>
+
+       <!--Sidenav -->
+    <section>
+        <div id="sidenav" class="bg-green-400 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh; right: -50%;">
+         <div id="closenav" class="flex justify-end p-5">
+      <svg xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     viewBox="0 0 24 24"
+     stroke-width="1.5"
+     stroke="currentColor"
+     class="w-5 h-5 cursor-pointer">
+
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 6L18 18M6 18L18 6" />
+</svg>
+
+
+         </div>   
+        <ul class="flex flex-col items-center gap-6 text-gray-700 text">
+
+  <li class="w-full text-center p-3 hover:bg-green-300 transition duration-300">
+  <a href="index.html" class="block">Home</a>
+  </li>
+
+   <li class="w-full text-center p-3 hover:bg-green-300 transition duration-300">
+   <a href="products.html" class="block">Products</a>
+   </li>
+
+   <li class="w-full text-center p-3 hover:bg-green-300 transition duration-300">
+   <a href="contact.html" class="block">Contact</a>
+    </li>
+
+        </div>
+
+    </section>
+
     <!--Contact Form-->
    <div class="bg-gray-100">
     <div class="container mx-auto py-12">
@@ -72,7 +109,7 @@
 </div>
 
      <!--Footer-->
-    <section class="bg-green-100 p-10 flex flex-col gap-5"> 
+    <section class="bg-green-400 p-10 flex flex-col gap-5"> 
         <h1 class="font-bold text-4xl mb-2">Greenden</h1>
         <p> Lorem ipsum dolor sit amet consectetur adipisicon Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nam!</p>
         <p>@2026 Greenday.com</p>
@@ -80,3 +117,4 @@
     
 </body>
 </html>
+<script src="contact.js"></script>
